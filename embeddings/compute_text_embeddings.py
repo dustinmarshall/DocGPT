@@ -2,12 +2,13 @@ import openai
 import pandas as pd
 import time
 import json
+import os
 
 # set up the API key
 openai.api_key = "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"
 
 # import pandas dataframe from jsonl file
-df = pd.read_csv("/Users/dustin/Documents/chatgpt_project/medical_dialogues_cleaned.csv")
+df = pd.read_csv(os.path.join(os.path.dirname(__file__), "embeddings/medical_dialogues_cleaned.csv"))
 
 def get_embedding(text: str, model: str="text-embedding-ada-002") -> list[float]:
     retry_count = 0

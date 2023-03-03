@@ -5,6 +5,7 @@ import json
 import time
 import numpy as np
 import tiktoken
+import os
 
 app = Flask(__name__)
 
@@ -12,10 +13,10 @@ app = Flask(__name__)
 openai.api_key = "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"
 
 # import pandas dataframe from jsonl file
-df = pd.read_csv("/Users/dustin/Documents/GitHub/PregChat/embeddings/medical_dialogues_cleaned.csv")
+df = pd.read_csv(os.path.join(os.path.dirname(__file__), "embeddings/medical_dialogues_cleaned.csv"))
 
 # import json file as dict
-with open('/Users/dustin/Documents/GitHub/PregChat/embeddings/text_embeddings.json') as json_file:
+with open(os.path.join(os.path.dirname(__file__), "embeddings/text_embeddings.json")) as json_file:
     document_embeddings = json.load(json_file)  
 
 def get_embedding(text: str, model: str="text-embedding-ada-002") -> list[float]:
@@ -78,7 +79,8 @@ def construct_prompt(question: str, context_embeddings: dict, df: pd.DataFrame) 
         chosen_sections.append("\n* " + document_section.answer)
         chosen_sections_indexes.append(str(section_index))
     
-    header = """Answer the question as truthfully as possible using the provided context, and if the answer is not contained within the text below, say "I'm sorry, that isn't within my expertise."\n\nContext:\n"""
+    header = """Answer the question as truthfully as possible using the provided context, and if the answer 
+    is not contained within the text below, say "I'm sorry, that isn't within my expertise."\n\nContext:\n"""
     
     return header + "".join(chosen_sections) + "\n\n Q: " + question + "\n A:"
 

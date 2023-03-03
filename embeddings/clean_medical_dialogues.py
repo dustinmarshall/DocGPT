@@ -1,8 +1,9 @@
 import pandas as pd
 import re
+import os
 
 # import csv file as pandas dataframe
-df = pd.read_csv("/Users/dustin/Documents/chatgpt_project/medical_dialogues.csv")
+df = pd.read_csv(os.path.join(os.path.dirname(__file__), "embeddings/medical_dialogues.csv"))
 
 # remove duplicate rows
 df = df.drop_duplicates()
@@ -152,4 +153,5 @@ df['description_question'] = df['description_question'].apply(lambda x: x.encode
 df['answer'] = df['answer'].apply(lambda x: x.encode('ascii', 'ignore').decode('ascii'))
 
 # save dataframe as csv
-df.to_csv('/Users/dustin/Documents/chatgpt_project/medical_dialogues_cleaned.csv', index=False)
+df.to_csv('medical_dialogues_cleaned.csv', index=False)
+
