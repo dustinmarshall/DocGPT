@@ -37,9 +37,9 @@ def construct_prompt(query: str) -> str:
     for i in most_relevant_answers["matches"]:
         answers_to_insert.append("\n- " + i["metadata"]["answer_raw"])
     
-    header = """\n\nIf the question above is not about pregnancy or the answer is not contained within the 
-    text below, say "I'm sorry, that isn't within my expertise." Otherwise, answer the question above 
-    as truthfully as possible using the context below:\n\n"""
+    header = """\n\nAnswer the question above as truthfully as possible using the context below. 
+    If the answer is not contained within the context below, say "I'm sorry, that isn't within 
+    my expertise."\n\n"""
     
     return "Q: " + query + header + "".join(answers_to_insert) + "\n\nA: "
 

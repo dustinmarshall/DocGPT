@@ -5,12 +5,12 @@
     <link rel="stylesheet" type="text/css" href="static/css/style.css">
 </head>
 <body>
-    <h1>Questions about <br>your pregnancy?</h1>
-    <h2>PregChat will respond using it's database of 250,000 doctor-patient dialogues and 
+    <h1>Questions about <br>your health?</h1>
+    <h2>DocGPT will respond using a knowledge base of 250,000 doctor-patient dialogues and 
         OpenAI's GPT-3 text completions model.</h2>
     <form method="POST">
         <input type="text" name="text" placeholder="Enter your question...">
-        <button type="submit" name="submit">Ask PregChat</button>
+        <button type="submit" name="submit">Ask DocGPT</button>
     </form>
     {% if answer %}
         <p> Q : {{ text }} <br><br>
