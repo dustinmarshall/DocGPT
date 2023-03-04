@@ -29,6 +29,7 @@ body {
   input[type="text"] {
     font-size: 1.2em;
     color: #FFAD4A;
+    border-color: #FFAD4A;
     padding: 10px;
     border: none;
     border-radius: 5px;
