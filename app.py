@@ -2,11 +2,12 @@ from flask import Flask, render_template, request
 import openai
 import time
 import pinecone
+import os
 
 app = Flask(__name__)
 
 # set up the API key
-openai.api_key = "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"
+openai.api_key = os.environ.get('OPENAI_API_KEY') 
 
 def get_embedding(text: str, model: str="text-embedding-ada-002") -> list[float]:
     retry_count = 0

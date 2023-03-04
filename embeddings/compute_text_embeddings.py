@@ -7,7 +7,7 @@ import pinecone
 from tqdm.auto import tqdm
 
 # set up the API key
-openai.api_key = "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"
+openai.api_key = os.environ.get('OPENAI_API_KEY')  
 
 # import json as dict (generate file by running clean_medical_dialogues.py)
 with open(os.path.join(os.path.dirname(__file__), "medical_dialogues_cleaned.json")) as json_file:
@@ -35,8 +35,8 @@ index_name = 'medical-dialog-embeddings'
 
 # initialize connection to pinecone (get API key at app.pinecone.io)
 pinecone.init(
-    api_key="e5a609b1-133e-4c44-8629-51c9bb3a6104",
-    environment="us-east1-gcp"
+    api_key = os.environ.get('PINECONE_API_KEY'),
+    environment = os.environ.get('PINECONE_ENVIRONMENT')  
 )
 # check if 'openai' index already exists (only create index if not)
 if index_name not in pinecone.list_indexes():
