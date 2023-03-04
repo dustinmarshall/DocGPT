@@ -9,7 +9,7 @@ from tqdm.auto import tqdm
 # set up the API key
 openai.api_key = "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"
 
-# import json as dict
+# import json as dict (generate file by running clean_medical_dialogues.py)
 with open(os.path.join(os.path.dirname(__file__), "medical_dialogues_cleaned.json")) as json_file:
     data = json.load(json_file)
 
