@@ -8,7 +8,7 @@ body {
   }
   
   h1 {
-    font-size: 4em;
+    font-size: 2.6em;
     margin: 50px auto 40px;
     max-width: 500px;
   }
@@ -19,7 +19,7 @@ body {
     max-width: 500px;
   }
 
-  h2 {
+  h3 {
     font-size: .8em;
     margin: 40px auto 30px;
     max-width: 500px;
