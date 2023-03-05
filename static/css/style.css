@@ -13,10 +13,20 @@ body {
     max-width: 500px;
   }
   
-  h3 {
-    font-size: 1em;
+  h2 {
+    font-size: 1.2em;
     margin: 40px auto 30px;
     max-width: 500px;
+  }
+
+  h2 {
+    font-size: .8em;
+    margin: 40px auto 30px;
+    max-width: 500px;
+  }
+
+  a {
+    color: #FFAD4A;
   }
   
   form {
