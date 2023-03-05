@@ -9,17 +9,23 @@ body {
   
   h1 {
     font-size: 6em;
+    margin: 40px auto;
     max-width: 500px;
+    padding: 0;
   }
   
   h2 {
     font-size: 2.6em;
+    margin: 40px auto;
     max-width: 500px;
+    padding: 0;
   }
 
   h3 {
     font-size: 1em;
+    margin: 40px auto;
     max-width: 500px;
+    padding: 0;
   }
 
   a {
