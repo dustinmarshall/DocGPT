@@ -8,13 +8,13 @@ body {
   }
   
   h1 {
-    font-size: 3em;
+    font-size: 4em;
     margin: 50px auto 40px;
     max-width: 500px;
   }
   
-  h2 {
-    font-size: 1.2em;
+  h3 {
+    font-size: 1em;
     margin: 40px auto 30px;
     max-width: 500px;
   }

@@ -5,9 +5,10 @@
     <link rel="stylesheet" type="text/css" href="static/css/style.css">
 </head>
 <body>
-    <h1>DocGPT</h1>
-    <h2>Questions about your health? DocGPT will respond using a knowledge base of 250,000 doctor-patient dialogues and 
-        OpenAI's GPT-3 text completions model. Disclaimer: The chatbot's medical advice is for information only. Please consult a healthcare provider for professional advice.</h2>
+    <h1>DocGPT : Medical Q&A ChatBot</h1>
+    <h2>Questions about your health? DocGPT will respond using a knowledge base 
+        of 257k doctor-patient dialogues and OpenAI's GPT-3 text completions model. 
+        </h2>
     <form method="POST">
         <input type="text" name="text" placeholder="Enter your question...">
         <button type="submit" name="submit">Ask DocGPT</button>
@@ -16,5 +17,11 @@
         <p> Q : {{ text }} <br><br>
             PregChat : {{ answer }}</p>
     {% endif %}
+    <p>Sources : DocGPT is built using uses a dataset of doctor-patient dialogues from 
+        <a href="https://www.google.com">icliniq.com and healthcaremagic.com</a> 
+        and OpenAI's <a href="https://www.google.com">Completions and Embeddings model APIs.</a><br>
+        Disclaimer : The Medical advice provided by DocGPT has not been thoroughly validated yet. Please consult 
+        a healthcare provider for professional advice.
+    </p>
 </body>
 </html>
