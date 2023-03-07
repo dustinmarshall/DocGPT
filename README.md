@@ -2,7 +2,7 @@
 This repository contains the source code for a chatbot application built using OpenAI's Completions and Embedding APIs, as well as a dataset of 257k doctor-patient dialogs.
 
 # Description
-DocGPT is currently only a prototype. The truth value of it's responses still needs to be thoroughly validated. The project was concieved of as a potential intervention to be piloted and evaluated for the final project of a graduate course on Big Data and Development taught at UChicago in winter of 2023.
+DocGPT is currently only a prototype. The truth value of it's responses still needs to be thoroughly validated. The project was concieved of as a potential intervention to be piloted and evaluated for the final project of a graduate course on Big Data and Development taught at UChicago in Winter 2023.
 
 # Installation
 To replicate this chatbot application, follow these steps (requires a Kaggle account for access to the dataset, a Pinecone account for storing the embeddings, and a Heroku account account for hosting the application):
