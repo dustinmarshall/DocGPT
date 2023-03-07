@@ -10,18 +10,18 @@ To replicate this chatbot application, follow these steps (requires a Kaggle acc
 1. Clone this repository to your local machine
 2. Open a terminal and navigate to where the repository is saved
 3. Run the following code from the command line to securely save private variables associated with your Kaggle, OpenAI, and Pinecone accounts to your local environment:  
-> `export KAGGLE_KEY=YOUR-KEY-HERE`
-> `export OPENAI_API_KEY=YOUR-KEY-HERE`
-> `export PINECONE_API_KEY=YOUR-KEY-HERE`
-> `export PINECONE_ENVIRONMENT=YOUR-ENVIRONMENT-HERE`
-4. To download the dataset from Kaggle, run the following code from the command line:
-> `kaggle datasets download -d dsxavier/diagnoise-me`
-5. To clean the doctor-patient dialog data, run the following code from the command line:
-> `python3 /embeddings/clean_data.py`
-6. To compute the embeddings and store them in your Pinecone Index, run the following code from the command line:
-> `python3 /embeddings/compute_embeddings.py`
-7. To create the app on Heroku and link it to your existing GitHub repo, run the following code:
-> `python3 /application/create_app.py`
+    `export KAGGLE_KEY=YOUR-KEY-HERE`
+    `export OPENAI_API_KEY=YOUR-KEY-HERE`
+    `export PINECONE_API_KEY=YOUR-KEY-HERE`
+    `export PINECONE_ENVIRONMENT=YOUR-ENVIRONMENT-HERE`
+4. To download the dataset from Kaggle, run the following code from the command line:  
+    `kaggle datasets download -d dsxavier/diagnoise-me`
+5. To clean the doctor-patient dialog data, run the following code from the command line:  
+    `python3 /embeddings/clean_data.py`
+6. To compute the embeddings and store them in your Pinecone Index, run the following code from the command line:  
+    `python3 /embeddings/compute_embeddings.py`
+7. To create the app on Heroku and link it to your existing GitHub repo, run the following code:  
+    `python3 /application/create_app.py`
 
 # Contact
 If you have any questions or concerns, please feel free to reach out to Dustin Marshall (dustinmarshall@uchicago.edu).
