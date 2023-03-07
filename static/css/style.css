@@ -1,6 +1,6 @@
 body {
     background-color: #ffffff;
-    color: #034c81;
+    color: #5ba2f4;
     font-family: Roboto;
     text-align: center;
     max-width: 500px;
@@ -9,22 +9,24 @@ body {
   
   h1 {
     font-size: 6.4em;
-    font-family: Montserrat;
+    font-family: Roboto;
     margin: 40px auto;
+    text-align: center;
     max-width: 500px;
     padding: 0;
   }
   
   h2 {
     font-size: 2.6em;
-    font-family: Montserrat;
+    font-family: Roboto;
     margin: 40px auto;
+    text-align: center;
     max-width: 500px;
     padding: 0;
   }
 
   a {
-    color: #034c81;
+    color: #5ba2f4;
   }
   
   form {
@@ -40,6 +42,7 @@ body {
     color: #5ba2f4;
     border-color: #5ba2f4;
     padding: 10px;
+    text-align: center;
     border: none;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -48,13 +51,14 @@ body {
   }
 
   /* Set placeholder text color to black */ 
-  ::placeholder { color: #034c81; }
+  ::placeholder { color: #5ba2f4; }
   
   button[type="submit"] {
     background-color: #034c81;
     color: #ffffff;
     font-size: 1.2em;
     padding: 10px 20px;
+    text-align: center;
     border: none;
     border-radius: 5px;
     cursor: pointer;
