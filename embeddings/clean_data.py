@@ -1,7 +1,16 @@
 import os
 import json
+import zipfile
 
-# import json as dict (download from https://www.kaggle.com/datasets/dsxavier/diagnoise-me)
+# unzip downloaded file with the dataset
+with zipfile.ZipFile(os.path.join(os.path.dirname(__file__), "en_medical_dialog.json"), 'r') as zip_ref:
+    zip_ref.extractall()
+
+# delete remaining zip and feather files, leaving only the resulting json
+os.remove(os.path.join(os.path.dirname(__file__), "archive.zip"))
+os.remove(os.path.join(os.path.dirname(__file__), "medical_dialogues_cleaned.feather"))
+
+# import json as dict
 with open(os.path.join(os.path.dirname(__file__), "en_medical_dialog.json")) as json_file:
     data = json.load(json_file)
 
