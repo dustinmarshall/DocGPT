@@ -14,7 +14,7 @@ body {
     font-size: 6.4em;
     font-weight: 600;
     font-family: Roboto;
-    margin: 40px auto;
+    margin: 0 auto;
     text-align: center;
     max-width: 500px;
     padding: 0;
@@ -23,7 +23,7 @@ body {
   h2 {
     font-size: 2.6em;
     font-family: Roboto;
-    margin: 40px auto;
+    margin: 0 auto;
     text-align: center;
     max-width: 500px;
     padding: 0;
@@ -79,7 +79,7 @@ body {
     max-width: 500px;
     word-wrap: break-word;
     text-align: center;
-    margin: 20px auto;
+    margin: 0 auto;
     padding: 10px;
     background-color: #cedfef;
     border-radius: 5px;
