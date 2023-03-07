@@ -1,6 +1,6 @@
 body {
-    background-color: #faf3eb;
-    color: #FFAD4A;
+    background-color: #ffffff;
+    color: #034c81;
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 0;
@@ -29,7 +29,7 @@ body {
   }
 
   a {
-    color: #FFAD4A;
+    color: #034c81;
   }
   
   form {
@@ -42,8 +42,8 @@ body {
   
   input[type="text"] {
     font-size: 1.2em;
-    color: #FFAD4A;
-    border-color: #FFAD4A;
+    color: #5ba2f4;
+    border-color: #5ba2f4;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -53,11 +53,11 @@ body {
   }
 
   /* Set placeholder text color to black */ 
-  ::placeholder { color: #FFAD4A; }
+  ::placeholder { color: #034c81; }
   
   button[type="submit"] {
-    background-color: #FFAD4A;
-    color: #fff;
+    background-color: #034c81;
+    color: #ffffff;
     font-size: 1.2em;
     padding: 10px 20px;
     border: none;
@@ -68,7 +68,7 @@ body {
   }
   
   button[type="submit"]:hover {
-    background-color: #fca235;
+    background-color: #034c81;
   }
   
   p {
@@ -78,7 +78,7 @@ body {
     text-align: left;
     margin: 20px auto;
     padding: 10px;
-    background-color: #f8e7d2;
+    background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
