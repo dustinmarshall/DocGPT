@@ -12,6 +12,7 @@ body {
   
   h1 {
     font-size: 6.4em;
+    font-weight: 600;
     font-family: Roboto;
     margin: 40px auto;
     text-align: center;
@@ -80,7 +81,7 @@ body {
     text-align: center;
     margin: 20px auto;
     padding: 10px;
-    background-color: #dbe6f0;
+    background-color: #cedfef;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
