@@ -5,27 +5,35 @@
     <link rel="stylesheet" type="text/css" href="static/css/style.css">
 </head>
 <body>
-    <h1>DocGPT</h1>
-    <h2>Medical Q&A ChatBot</h2>
-    <h3>Questions about your health? DocGPT will respond using a knowledge base 
-        of 257k doctor-patient dialogues and OpenAI's GPT-3 text completions model.</h2>
+    <h1>
+        DocGPT
+    </h1>
+    <h2>
+        Medical Q&A ChatBot
+    </h2>
+    <h3>
+        Questions about your health? DocGPT will respond using a knowledge base 
+        of 257k doctor-patient dialogues and OpenAI's GPT-3 text completions model.
+    </h2>
     <form method="POST">
         <input type="text" name="text" placeholder="Enter your question...">
         <button type="submit" name="submit">Ask DocGPT</button>
     </form>
     {% if answer %}
-        <p> Q : {{ text }} <br><br>
-            DocGPT : {{ answer }}</p>
+        <p> 
+            Q : {{ text }} 
+            <br>
+            <br>
+            DocGPT : {{ answer }}
+        </p>
     {% endif %}
-    <body>Disclaimer : DocGPT is currently only a prototype. The truth value of it's responses still needs to be 
+    <body>
+        Disclaimer : DocGPT is currently only a prototype. The truth value of it's responses still needs to be 
         thoroughly validated. For actual medical advice, please consult a healthcare provider.</a>
         <br>
         <br>
-        Sources : DocGPT was built using uses a dataset of 
-        <a href="https://www.kaggle.com/datasets/dsxavier/diagnoise-me">257k doctor-patient dialogues</a> 
-        and OpenAI's <a href="https://platform.openai.com/docs/introduction">Completions and Embeddings APIs</a>. If 
-        you have questions, reach out to Dustin Marshall (dustinmarshall@uchicago.edu). The complete source code for 
-        this project is available on <a href="https://github.com/dustinmarshall/DocGPT">Github</a>.</body>
-    \\ add body text here
+        The complete source code for this project is available on <a href="https://github.com/dustinmarshall/DocGPT">Github</a>. 
+        If you have any questions or concerns, please feel free to reach out to Dustin Marshall (dustinmarshall@uchicago.edu).
+    </body>
 </body>
 </html>

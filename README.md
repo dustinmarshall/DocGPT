@@ -24,4 +24,4 @@ To replicate this chatbot application, follow these steps (requires a Kaggle acc
     `python3 /application/create_app.py`
 
 # Contact
-If you have any questions or concerns, please feel free to reach out to me, Dustin Marshall, at dustinmarshall@uchicago.edu.
+If you have any questions or concerns, please feel free to reach out to Dustin Marshall (dustinmarshall@uchicago.edu).
