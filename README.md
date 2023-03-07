@@ -10,9 +10,9 @@ To replicate this chatbot application, follow these steps (requires a Kaggle acc
 1. Clone this repository to your local machine
 2. Open a terminal and navigate to where the repository is saved
 3. Run the following code from the command line to securely save private variables associated with your Kaggle, OpenAI, and Pinecone accounts to your local environment:  
-    `export KAGGLE_KEY=YOUR-KEY-HERE`
-    `export OPENAI_API_KEY=YOUR-KEY-HERE`
-    `export PINECONE_API_KEY=YOUR-KEY-HERE`
+    `export KAGGLE_KEY=YOUR-KEY-HERE`  
+    `export OPENAI_API_KEY=YOUR-KEY-HERE`  
+    `export PINECONE_API_KEY=YOUR-KEY-HERE`  
     `export PINECONE_ENVIRONMENT=YOUR-ENVIRONMENT-HERE`
 4. To download the dataset from Kaggle, run the following code from the command line:  
     `kaggle datasets download -d dsxavier/diagnoise-me`
