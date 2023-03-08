@@ -1,5 +1,5 @@
 # DocGPT : Medical Q&A Chatbot
-This repository contains the source code for a chatbot application built using OpenAI's Completions and Embedding APIs, as well as a dataset of 257k doctor-patient dialogs.
+This repository contains the source code for a chatbot application built using OpenAI's Completions and Embedding APIs, as well as a dataset of 257k doctor-patient dialogs. Access the chatbot application here: https://docgpt.herokuapp.com/
 
 # Description
 DocGPT is currently only a prototype. The truth value of it's responses still needs to be thoroughly validated. The project was concieved of as a potential intervention to be piloted and evaluated for the final project of a graduate course on Big Data and Development taught at UChicago in Winter 2023.
