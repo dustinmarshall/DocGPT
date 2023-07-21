@@ -72,7 +72,7 @@ def home():
         # Call the reverse_text function on the input text
         answer = answer_query_with_context(text)
         # Return the reversed text to the user
-        return render_template('index.html', answer="TEST", text=text)
+        return render_template('index.html', answer=answer, text=text)
     else:
         # If the user hasn't submitted any text yet, just show the empty form
         return render_template('index.html')
