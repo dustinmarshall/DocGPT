@@ -62,7 +62,7 @@ def answer_query_with_context(query: str, show_prompt: bool = False) -> str:
                 **COMPLETIONS_API_PARAMS
             )
 
-    return response["choices"][0]["text"].strip(" \n")
+    return "TEST" #response["choices"][0]["text"].strip(" \n")
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
