@@ -2,14 +2,16 @@
 This repository contains the source code for a chatbot application built using OpenAI's Completions and Embedding APIs, as well as a dataset of 257k doctor-patient dialogs. Access the chatbot application here: https://docgpt.herokuapp.com/
 
 # Description
-DocGPT is currently only a prototype. The truth value of it's responses still needs to be thoroughly validated. The project was concieved of as a potential intervention to be piloted and evaluated for the final project of a graduate course on Big Data and Development taught at UChicago in Winter 2023.
+DocGPT is currently only a prototype. The truth value of its responses still needs to be thoroughly validated. The project was conceived of as a potential intervention to be piloted and evaluated for the final project of a graduate course on Big Data and Development taught at UChicago in Winter 2023. 
 
-# Installation
-To replicate this chatbot application, follow these steps (requires a Kaggle account for access to the dataset, a Pinecone account for storing the embeddings, and a Heroku account account for hosting the application):
+The accompanying research proposal can be accessed here: https://github.com/dustinmarshall/DocGPT/blob/main/research_design.pdf
+
+# Replication
+To replicate this chatbot application, follow these steps (requires a Kaggle account for access to the dataset, a Pinecone account for storing the embeddings, and a Heroku account for hosting the application):
 
 1. Clone this repository to your local machine
 2. Open a terminal and navigate to where the repository is saved
-3. Run the following code from the command line to securely save private variables associated with your Kaggle, OpenAI, and Pinecone accounts to your local environment:  
+3. Run the following code from the command line to securely save private variables associated with your Kaggle, OpenAI, and Pinecone account to your local environment:  
     `export KAGGLE_KEY=YOUR-KEY-HERE`  
     `export OPENAI_API_KEY=YOUR-KEY-HERE`  
     `export PINECONE_API_KEY=YOUR-KEY-HERE`  
